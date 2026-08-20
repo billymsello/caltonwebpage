@@ -6,6 +6,7 @@ main{
 body{
     margin:0;
     width: 100vw;
+     background-color: #e3e3e3e6;
 }
 section{
     width:90vw;
@@ -41,12 +42,6 @@ section{
     text-align: center;
 }
 
-.header_name_container{
-    /* background-color: rgba(211, 211, 211, 0.25); */
-    /* background-color: blue; */
-    text;
-}
-
 hr{
     width: 80%;
     color:rgb(175, 175, 175);
@@ -63,14 +58,43 @@ hr{
 }
 .name_heading{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 a{
+    text-decoration: none;
     color:#a60311
 }
 
 .about{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: start;
+}
+
+.reels_list{
+    list-style-position: outside;
+    list-style: none;
+    
+}
+
+h2,h3{
+    color:#463832
+}
+
+
+.instagram_snapshot, .audience_demographics, .deliverables, .audience_demographics, .content_themes{
+    list-style-position: inside;
+    list-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #46383237;
+    /* border: 1px solid blue; */
+}
+
+.about{
+    border: .5px solid black;
+    border-radius: 10px;
+    border-bottom: 0;
+    border-top: 0;
+
 }
