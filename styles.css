@@ -10,6 +10,7 @@ body{
 }
 section{
     width:90vw;
+    max-width:990px;
     margin: auto;
     padding: 10px;
     /* border: 1px solid royalblue; */
@@ -17,28 +18,30 @@ section{
 
 .introduction{
     color:rgb(175, 175, 175);
-    /* width:90vw; */
+    height: 23.4vh;
     display: flex;
     flex-direction: row;
-    /* margin: auto; */
     margin-top: 55px;
     border-radius: 10px;
+    line-height: 5px;
 }
 
 .landing_image{
-    width: 30vw;
-    height: auto;
+    /* width: 30vw; */
+    height: 23.4vh;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 .decorativestuff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width:90vw;
     /* margin: auto; */
     background-color: #463832;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
-
     text-align: center;
 }
 
@@ -46,11 +49,6 @@ hr{
     width: 80%;
     color:rgb(175, 175, 175);
 
-}
-
-.introduction{
-    /* color: green; */
-    line-height: 5px;
 }
 
 .followers{
@@ -98,3 +96,4 @@ h2,h3{
     border-top: 0;
 
 }
+
