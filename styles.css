@@ -8,9 +8,9 @@ body{
     width: 100vw;
      background-color: #e3e3e3e6;
 }
-section{
+section, footer{
     width:90vw;
-    max-width:990px;
+    max-width:750px;
     margin: auto;
     padding: 10px;
     /* border: 1px solid royalblue; */
@@ -25,6 +25,9 @@ section{
     border-radius: 10px;
     line-height: 5px;
 }
+.spanstuff{
+    font-size: smaller;
+}
 
 .landing_image{
     /* width: 30vw; */
@@ -38,7 +41,6 @@ section{
     align-items: center;
     justify-content: center;
     width:90vw;
-    /* margin: auto; */
     background-color: #463832;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -46,9 +48,9 @@ section{
 }
 
 hr{
-    width: 80%;
-    color:rgb(175, 175, 175);
-
+    width: 90%;
+    background-color:rgb(175, 175, 175);
+    max-width:750px;
 }
 
 .followers{
@@ -67,12 +69,6 @@ a{
 .about{
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: start;
-}
-
-.reels_list{
-    list-style-position: outside;
-    list-style: none;
-    
 }
 
 h2,h3{
@@ -96,4 +92,40 @@ h2,h3{
     border-top: 0;
 
 }
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
 
+footer{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    /* background-color: #463832; */
+    color: black;
+}
+
+.carousel-item {
+  flex: 0 0 10px; /* Shows a preview of the next card */
+  height: 100%;
+}
+
+.carousel-container {
+    overflow: auto; /* Enables scrolling */
+scrollbar-width: none; /* Firefox */
+-ms-overflow-style: none; /* IE and Edge */
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling for iOS */
+    /* background-color: #46383237; */
+    /* border: 1px solid blue; */
+}
+.carousel-item {
+  scroll-snap-align: center;
+}
+blockquote{
+    border: 1px solid blue;
+}
