@@ -19,21 +19,22 @@ section, footer{
 .introduction{
     color:rgb(175, 175, 175);
     height: 23.4vh;
+    min-height: 210.6px;
     display: flex;
     flex-direction: row;
     margin-top: 55px;
     border-radius: 10px;
     line-height: 5px;
 }
-.spanstuff{
-    font-size: smaller;
-}
+
 
 .landing_image{
     /* width: 30vw; */
-    height: 23.4vh;
+    height: 100%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    /* border: 1px solid lime; */
+
 }
 .decorativestuff{
     display: flex;
@@ -45,6 +46,7 @@ section, footer{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
+    /* border: 1px solid teal; */
 }
 
 hr{
@@ -55,10 +57,38 @@ hr{
 
 .followers{
     font-size: 1.755em;
+    /* border: 1px solid gold; */
 }
 .name_heading{
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.4rem;
+    /* border: 1px solid royalblue; */
+}
+@media screen and (max-height: 999px){
+    .introduction{
+    min-height: 240.6px;
+    }
+
+}
+@media screen and (max-width: 404px) {
+    .name_heading{
+
+    font-size: 2.2rem;
+
+}
+}
+@media screen and (max-width: 425px) {
+    .name_heading{
+
+    font-size: 2rem;
+
+}
+}
+@media screen and (max-width: 452px) {
+    .spanstuff{
+    font-size: 0.75rem;
+    /* border: 1px solid green; */
+}
 }
 
 a{
@@ -99,7 +129,7 @@ h2,h3{
 }
 
 footer{
-    margin-top: 50px;
+    /* margin-top: 50px; */
     text-align: center;
     padding: 10px;
     /* background-color: #463832; */
@@ -112,6 +142,8 @@ footer{
 }
 
 .carousel-container {
+    width: 100%;
+    
     overflow: auto; /* Enables scrolling */
 scrollbar-width: none; /* Firefox */
 -ms-overflow-style: none; /* IE and Edge */
