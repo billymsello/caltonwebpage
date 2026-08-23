@@ -142,22 +142,40 @@ footer{
 }
 
 .carousel-container {
-    width: 100%;
-    
-    overflow: auto; /* Enables scrolling */
+width: 100%;
+overflow: auto; /* Enables scrolling */
 scrollbar-width: none; /* Firefox */
 -ms-overflow-style: none; /* IE and Edge */
-  display: flex;
-  gap: 5px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling for iOS */
-    /* background-color: #46383237; */
-    /* border: 1px solid blue; */
+display: flex;
+gap: 5px;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+-webkit-overflow-scrolling: touch; /* Smooth momentum scrolling for iOS */
+/* background-color: #46383237; */
+/* border: 1px solid blue; */
 }
 .carousel-item {
   scroll-snap-align: center;
 }
 blockquote{
     border: 1px solid blue;
+}
+.gallery-image{
+    width: 100%;
+}
+
+.gallery_container{
+    display: flex;
+    overflow: auto; /* Enables scrolling */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling for iOS */
+}
+.gallery_container img {
+  scroll-snap-align: start;
+  flex: 0 0 100%; /* Ensures each image takes full width, adjust as needed */
 }
