@@ -186,3 +186,10 @@ scroll-snap-type: x mandatory;
   scroll-snap-align: start;
   flex: 0 0 100%; /* Ensures each image takes full width, adjust as needed */
 }
+
+.highlight{
+    color:#463832;
+    /* text-decoration: bold; */
+    font-weight: bold;
+
+}
