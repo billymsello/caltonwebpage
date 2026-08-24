@@ -6,7 +6,11 @@ main{
 body{
     margin:0;
     width: 100vw;
-     background-color: #e3e3e3e6;
+    background-color: #ffffff;
+    /* background-color: #afafaf; */
+    /* background-color: rgba(255, 255, 255, 0);
+    background-image: linear-gradient(white, #e3e3e3e6);
+ */
 }
 section, footer{
     width:90vw;
@@ -42,7 +46,7 @@ section, footer{
     align-items: center;
     justify-content: center;
     width:90vw;
-    background-color: #463832;
+    background-color: rgb(70, 56, 50);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
@@ -51,7 +55,7 @@ section, footer{
 
 hr{
     width: 90%;
-    background-color:rgb(175, 175, 175);
+    background-color:#afafaf;
     max-width:750px;
 }
 
@@ -111,8 +115,9 @@ h2,h3{
     list-style: none;
     padding: 10px;
     border-radius: 10px;
-    background-color: #46383237;
-    /* border: 1px solid blue; */
+    background-color: rgba(70, 56, 50, 0.679);
+    /* border: 1px solid card green; */
+    /* color: gray; */
 }
 
 .about{
@@ -153,13 +158,14 @@ scroll-snap-type: x mandatory;
 -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling for iOS */
 /* background-color: #46383237; */
 /* border: 1px solid blue; */
+  border: none;
+
 }
 .carousel-item {
   scroll-snap-align: center;
+  border: none;
 }
-blockquote{
-    border: 1px solid blue;
-}
+
 .gallery-image{
     width: 100%;
 }
@@ -174,6 +180,7 @@ blockquote{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling for iOS */
+    padding-bottom: 20px;
 }
 .gallery_container img {
   scroll-snap-align: start;
